@@ -69,7 +69,7 @@ export default {
       cursor: pointer;
     }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 361px) and (max-width: 768px) {
     .gallery {
     display: flex;
     flex-direction: column;
@@ -78,5 +78,13 @@ export default {
     padding: 0 5rem;
   }
   }
-
+@media only screen and (max-width: 360px) {
+    .gallery {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: 5rem auto;
+    padding: 0 5rem;
+  }
+  }
 </style>

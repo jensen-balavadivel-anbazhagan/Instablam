@@ -99,9 +99,16 @@ a {
       cursor: pointer;
     }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 361px) and (max-width: 768px) {
   .home {
     width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .home {
+    width: 360px;
     margin: 0 auto;
   }
 }

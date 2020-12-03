@@ -129,9 +129,16 @@ export default {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 361px) and (max-width: 768px) {
   .filtering {
     width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .filtering {
+    width: 360px;
     margin: 0 auto;
   }
 }
