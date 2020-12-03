@@ -23,7 +23,7 @@ Instablam is a progressive web application to capture images is desktop or mobil
 |-|-|
 |Fast and reliable | 3 / 3 |
 |Installable | 3 / 3 |
-|PWA Optimized | 6 / 8 |
+|PWA Optimized | 8 / 8 |
 ```
 
 
