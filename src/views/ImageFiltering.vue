@@ -3,7 +3,11 @@
     <Header />
     <section class="img-container">
       <canvas id="img"></canvas>
-    </section>
+      <div class="info">
+       <div style="color: rgb(240, 229, 215);"> <b>Location : </b> <p v-if="this.location"> {{ this.location }}</p>  </div>
+        <div style="color: rgb(240, 229, 215);">  <b>Time :  </b><p v-if="this.time">{{ this.time }}</p>  </div>
+      </div>
+         </section>
 
     <footer class="filter-footer">
       <button id="back" @click="backToCamera">Back</button>
@@ -27,26 +31,32 @@ export default {
       capturedImage: {
         id: "",
         title: "",
-        location: "Test",
-        timetaken: "",
       },
     };
   },
   mounted() {
     this.getImage();
   },
+  computed: {
+     location(){
+      return this.$store.state.imageLoc;
+    },
+    time() {
+       const date = new Date();
+      return date.toLocaleString();
+    }
+  },
   methods: {
     getImage: function () {
       const pictureI = this.$store.state.picture;
       const url = URL.createObjectURL(pictureI);
       this.imageURL = url;
-      const date = new Date();
       const filename = this.$store.state.uploadFileName;
       this.capturedImage = {
         id: filename,
         filename: filename,
         location: this.$store.state.imageLoc,
-        timetaken: date.toLocaleString(),
+        timeTaken: this.time,
       };
       this.addImage();
       this.Caman("#img", this.imageURL, function () {
@@ -101,6 +111,13 @@ export default {
     canvas {
       height: 10rem;
     }
+
+    .info {
+      color: rgb(240, 229, 215);
+    display: inline-block;
+    padding: 2rem;
+    width: 20rem;
+  }
 
     button,
     a {

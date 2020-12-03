@@ -4,7 +4,7 @@
     <div class="lightbox-info">
       <div class="lightbox-info-inner">
       <div> <b>Location : </b> <p v-if="photo.location"> {{ photo.location }}</p>  </div>
-        <div>  <b>Time :  </b><p v-if="photo.timetaken">{{ photo.timetaken }}</p>  </div>
+        <div>  <b>Time :  </b><p v-if="photo.timeTaken">{{ photo.timeTaken }}</p>  </div>
         <div>  &nbsp;</div> 
         <footer class="button-footer">
       <a id="download" @click="download">Download</a>

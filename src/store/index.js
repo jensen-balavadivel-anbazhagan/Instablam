@@ -37,7 +37,6 @@ export default new Vuex.Store({
     router.push("/image");
   },
   getImage(state,file ) {
-    console.log("file" + file);
     state.imageFile = file;
   } ,
   updatePic(state,picture ) {
