@@ -11,7 +11,7 @@ Instablam is a progressive web application to capture images is desktop or mobil
 |Desktop Firefox |⛔|✔️|⛔|✔️|✔️|✔️|
 |Mobil   Firefox |Inte testat|Inte testat|Inte testat|Inte testat|Inte testat|Inte testat|
 |Desktop Safari  |Inte testat|Inte testat|Inte testat|Inte testat|Inte testat|Inte testat|
-|Mobil   Safari  |✔️|⛔|⛔|✔️|✔️|Inte testat|
+|Mobil   Safari  |✔️|⛔|⛔|✔️|✔️|✔️|
 |Desktop Edge    |⛔|✔️|✔️|✔️|✔️|✔️|
 |Mobil   Edge    |✔️|✔️|✔️|✔️|✔️|✔️|
 ```
