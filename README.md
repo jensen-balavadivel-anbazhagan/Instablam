@@ -4,9 +4,9 @@
 ```
 
 npm install
-
+```
 ## Backend
-
+```
 cd instablamApi
 npm install
 ```
@@ -14,8 +14,9 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-
+```
 ## Backend
+```
 node app.js
 ```
 ### Compiles and minifies for production
