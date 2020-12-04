@@ -1,6 +1,6 @@
 # Instablam
 
-Instablam is a progressive web application to capture images is desktop or mobile camera and view/download the images in the gallery.
+Instablam is a progressive web application to capture images in desktop or mobile camera and view/download the images in the gallery.
 
 ## Testing in browsers
 ```
